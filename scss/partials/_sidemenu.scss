@@ -1,0 +1,34 @@
+.menu.menu-left{
+  
+  background-color: $my-sidemenu-backcolor;
+  color: $my-sidemenu-textcolor;
+  .item{
+    border-color: #555;
+    &:first-child{
+      border-top: 0px;
+    }
+    .item-content{
+      background-color: $my-sidemenu-backcolor;
+      color: $my-sidemenu-textcolor;
+    }
+    .icon{
+      color: #ccc;
+    }
+  }
+}
+.menu-content {
+  .nav-bar-title {
+    img{
+      position:relative;
+      width: 25px;
+      background-position: center;
+      background-size: cover;
+      vertical-align: middle;
+    }
+  }
+  .header-item{
+    .back-text{
+      display: none;
+    }
+  }
+}

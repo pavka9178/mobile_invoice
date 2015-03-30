@@ -1,0 +1,75 @@
+.list.card.is-pad {
+  .item-floating-label {
+    span{
+      text-align: left;
+    }
+  }
+  @include pad {
+    width: calc(49% - 10px);
+    margin:  5px 5px 5px 5px;
+    display: inline-block;
+    vertical-align: top;
+    label {
+      text-align: left;
+    }
+  }  
+}
+
+.pad-list {
+  @include pad {
+    padding: 120px 100px;
+    .item{
+      border: none;
+      margin: 0px;
+    }
+    .item-separator{
+      border-bottom: 1px solid #aaa;
+      height: 1px;
+    }
+  }
+}
+
+.list {  
+  .invoice-left-container {
+    float: left;
+    width: 55%;
+    p{
+      margin: 2px;
+    }
+  }
+  .invoice-right-container {
+    float: right;
+    width: 45%;
+    text-align: right;
+    p{
+      margin: 2px;
+    }
+  }
+  @include phone {
+    .item-main-title{
+      font-size: $my-listitem-maintitle-fontsize-phone;
+      color: $my-listitem-maintitle-color;
+      span {
+        font-size: $my-listitem-subtitle-fontsize-phone;
+        color: red;
+      }
+    }
+    .item-sub-title{
+      font-size: $my-listitem-subtitle-fontsize-phone;
+      color: $my-listitem-subtitle-color;
+    }
+  }
+
+  @include pad {
+    .item-main-title{
+      font-size: $my-listitem-maintitle-fontsize-pad;
+      color: $my-listitem-maintitle-color;
+      letter-spacing: 0.5px;
+    }
+    .item-sub-title{
+      font-size: $my-listitem-subtitle-fontsize-pad;
+      color: $my-listitem-subtitle-color;
+      margin-top: 8px;
+    }
+  }
+}

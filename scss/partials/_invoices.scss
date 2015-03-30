@@ -1,0 +1,104 @@
+.page.page-invoices-estimates {
+
+  .item-body{
+    .button{
+      margin-top: 10px;
+      max-width: 100%;
+      width: 100%;
+    }
+    .item-content {
+      padding: 5px;
+    }
+  }
+} 
+.page.page-edit-invoice-estimate {
+  .item-divider{
+    i {
+      float: right;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    i:active {
+      color:#ccc;
+    }
+  }
+  .item-body{
+    .button{
+      margin-top: 10px;
+      max-width: 100%;
+      width: 100%;
+    }
+    .ion-option-button{
+      margin-top: 0px;
+      width: auto;
+    }
+    .item-content {
+      padding: 2px;
+    }
+  }
+} 
+
+.page.page-add-line-item {
+  .input-label{
+    text-align:left;
+    span {
+      color: red;
+    }
+  }
+  .item-input {
+    select {
+      width:65%;
+      border: none;
+    }
+    
+  }
+} 
+.page{
+  .item-input {
+    padding-left: 0px;
+    border: none;
+    border-bottom:1px solid #ddd;
+    margin:0px;
+    .input-label{
+      /*display:none;*/
+      text-align: left;
+      width:50%;
+      span{
+        color: red;
+      }
+    }
+    input {
+      border: none;
+      padding-left: 10px;
+    }
+    .currency-input{
+      position: absolute;
+      left: 35%;
+      opacity: 0;
+      
+    }
+    .currency-display{
+      padding-left: 10px;
+      border-bottom: 1px solid #ddd;
+      width: 65%;
+      text-align: left;
+      height: 25px;
+    }
+    select {
+      border: none;
+      background: #fff;
+      height: 34px;
+      width: 250px;
+      margin-left: 8px;
+    }
+  }
+  .item-input.required-option-empty{
+    input {
+      border-bottom: 1px solid red;
+    }
+    select {
+      border-bottom: 1px solid red;
+    }
+  }  
+}
